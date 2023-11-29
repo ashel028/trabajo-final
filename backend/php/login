@@ -1,0 +1,25 @@
+
+<?php
+session_start();
+$error = '';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    include("conexion.php");
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $consulta = "SELECT id FROM produto WHERE nombre_de_usuario = '$username' and password = '$password'";
+    $resultado = mysqli_query($conn, $consulta);
+    $row = mysqli_fetch_array($resultado, MYSQLI_ASSOC);
+    $count = mysqli_num_rows($resultado);
+
+    if ($count == 1) {
+        $_SESSION['login_user'] = $username;
+        header("location:index.php"); // Redirige a la página micuenta.php después de iniciar sesión
+        exit();
+    } else {
+        $error = "Nombre de usuario o contraseña inválidos";
+    }
+}
+?>

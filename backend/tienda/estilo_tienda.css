@@ -1,0 +1,38 @@
+body {
+  background-color: green;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto centra el bloque en la mitad de la página verticalmente */
+}
+
+.contact-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.logo {
+    justify-content: center;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}

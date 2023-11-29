@@ -1,0 +1,121 @@
+
+
+
+
+/* Reset de estilos y fuentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #445566; /* Fondo gris azulado */
+    color: #ffffff;
+}
+
+
+.login-container {
+    max-width: 6px;
+    margin: 0 auto;
+}
+
+
+
+.create {
+    background-color: #1e2a38; /* Fondo oscuro para el formulario de creación */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.create label, .create input, .create button {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.create input,
+.create button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.create button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.create button:hover {
+    background-color: #45a049;
+}
+
+table {
+    background-color: #333; /* Fondo oscuro para la tabla */
+    color: #ffffff;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+
+
+table, th, td {
+    border: 1px solid #555;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #1e2a38; /* Color de fondo más oscuro para las celdas de encabezado */
+}
+
+/* Estilo para los botones de editar y eliminar */
+table button {
+    cursor: pointer;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+table button:hover {
+    background-color: #ddd;
+}
+
+
+.edit-form {
+    display: none;
+    background-color: #1e2a38; /* Fondo oscuro para el formulario de edición */
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+.edit-form label,
+.edit-form input,
+.edit-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.edit-form button {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.edit-form button:hover {
+    background-color: #45a049;
+}
